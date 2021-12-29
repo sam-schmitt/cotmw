@@ -8,12 +8,12 @@ function HomeRouter() {
 	return (
 		<div>
 			<Switch>
-				<Route path={"/blogs"}>
+				{/* <Route path={"/blogs"}>
 					<Blogs />
 				</Route>
 				<Route path={"/projects"}>
 					<Projects />
-				</Route>
+				</Route> */}
 				<Route path={"/"}>
 					<Home />
 				</Route>

@@ -1,10 +1,9 @@
 import React from "react";
 import {
 	FaTwitterSquare,
-	FaFacebookSquare,
 	FaInstagramSquare,
-	FaLinkedin,
-	FaGithubSquare,
+	FaPhotoVideo,
+	FaExternalLinkSquareAlt,
 } from "react-icons/fa";
 
 const Contacts = () => {
@@ -18,44 +17,29 @@ const Contacts = () => {
 			}}
 		>
 			<a
-				href='https://twitter.com/samschmiitt'
+				href='https://twitter.com/citizensMW'
 				target='_blank'
 				rel='noreferrer'
 				color='#000'
 			>
-				<FaTwitterSquare size={50} color='#0036af' />
+				<FaTwitterSquare size={50} color='#fff' />
+			</a>
+
+			<a
+				href='https://www.instagram.com/citizensofthemilkyway/'
+				target='_blank'
+				rel='noreferrer'
+				color='#000'
+			>
+				<FaInstagramSquare size={50} color='#fff' />
 			</a>
 			<a
-				href='https://www.facebook.com/SamSchmitt703'
+				href='https://opensea.io/collection/citizens-of-the-milky-way'
 				target='_blank'
 				rel='noreferrer'
 				color='#000'
 			>
-				<FaFacebookSquare size={50} color='#0036af' />
-			</a>
-			<a
-				href='https://www.instagram.com/sam.schmiitt/'
-				target='_blank'
-				rel='noreferrer'
-				color='#000'
-			>
-				<FaInstagramSquare size={50} color='#0036af' />
-			</a>
-			<a
-				href='https://www.linkedin.com/in/samuel-schmitt-008805189/'
-				target='_blank'
-				rel='noreferrer'
-				color='#000'
-			>
-				<FaLinkedin size={50} color='#0036af' />
-			</a>
-			<a
-				href='https://github.com/sam-schmitt'
-				target='_blank'
-				rel='noreferrer'
-				color='#000'
-			>
-				<FaGithubSquare size={50} color='#0036af' />
+				<FaExternalLinkSquareAlt size={50} color='#fff' />
 			</a>
 		</div>
 	);

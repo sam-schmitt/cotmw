@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Contacts from "../../components/Contacts/Contacts.js";
-import BlogsSection from "../../components/homeSections/blogs/blogs.js";
-import NFTsSection from "../../components/homeSections/nfts/nfts.js";
-import ProjectsSection from "../../components/homeSections/projects/projects.js";
+import Left from "../../components/homeSections/left/left.js";
+import Right from "../../components/homeSections/right/right.js";
 import Name from "../../components/Name/Name.js";
 import Logo from "../../components/NavBar/NavBar.js";
 import Titles from "../../components/Titles/Titles.js";
@@ -35,7 +34,7 @@ export default function Home() {
 				style={{
 					display: "flex",
 					flexDirection: "row",
-					justifyContent: "space-between",
+					justifyContent: "space-around",
 					...(mobileView && {
 						flexDirection: "column",
 						justifyContent: "center",
@@ -52,11 +51,11 @@ export default function Home() {
 					...(mobileView && {
 						flexDirection: "column",
 					}),
-					justifyContent: "center",
+					justifyContent: "space-around",
 				}}
 			>
-				<BlogsSection />
-				<ProjectsSection />
+				<Left mobileView={mobileView} />
+				<Right mobileView={mobileView} />
 			</div>
 		</div>
 	);

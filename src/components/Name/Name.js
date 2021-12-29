@@ -5,19 +5,25 @@ const Name = ({ mobileView }) => {
 	return (
 		<div
 			className={styles.nameContainer}
-			style={{ ...(!mobileView && { marginLeft: 50 }) }}
+			// style={{ ...(!mobileView && { marginLeft: 300 }) }}
 		>
 			<p
 				className={styles.name}
 				style={{ ...(mobileView && { textAlign: "center" }) }}
 			>
-				Samuel Schmitt
+				Citizens
 			</p>
 			<p
 				className={styles.sub}
 				style={{ ...(mobileView && { textAlign: "center" }) }}
 			>
-				Blockchain Web Developer
+				of the
+			</p>
+			<p
+				className={styles.name}
+				style={{ ...(mobileView && { textAlign: "center" }) }}
+			>
+				Milky Way
 			</p>
 		</div>
 	);

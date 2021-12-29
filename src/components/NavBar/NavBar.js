@@ -9,6 +9,7 @@ const NavBar = ({ mobileView }) => {
 		<div
 			style={{
 				display: "flex",
+				flexWrap: "wrap",
 				padding: 10,
 				justifyContent: "center",
 				alignItems: "center",
@@ -25,6 +26,7 @@ const NavBar = ({ mobileView }) => {
 						width: 200,
 					}),
 					padding: 20,
+					borderRadius: 1000,
 				}}
 				className='photo'
 				src={logo}
